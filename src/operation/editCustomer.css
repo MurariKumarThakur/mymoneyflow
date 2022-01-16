@@ -1,0 +1,36 @@
+
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone_number {
+    display: flex;
+    flex-direction: column;
+  }
+  .amount {
+    display: flex;
+    flex-direction: column;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+  .add_contact_form input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 15px;
+    color:grey;
+  }
+  .actionButton_addCustomer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+     
+  }
+  .date input:hover{
+  
+  }

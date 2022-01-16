@@ -1,0 +1,37 @@
+.calculartor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+}
+.calculartor div {
+  display: flex;
+  flex-direction: column;
+}
+
+.myCalculatorForm input {
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: bold;
+}
+.total_Loss input  {
+  color: rgb(122, 2, 2) !important;
+  border: 1px solid black;
+}
+.myCalculatorForm input[disabled]{
+   opacity: 0.8;
+  color:rgb(5, 4, 4);
+  cursor: not-allowed;
+}
+.total_profit input {
+  color: green !important;
+  border: 1px solid black;
+  
+}
+ .clear_button {
+  width: 300px;
+}   
+

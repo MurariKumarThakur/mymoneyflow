@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.navbar div {
+  margin-left: 10px;
+  border-right: 1px solid gold;
+  margin-right: 2px;
+  padding-right: 7px;
+}
+.navbar div:first-child {
+  border-left: 1px solid gold;
+  margin-right: 2px;
+  padding-left: 7px;
+}
+.navbar a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-left: 10px;
+  border-right: 1px solid gold;
+  margin-right: 2px;
+  padding-right: 7px;
+}
+/* .activate{
+ font-weight: bold;
+  border-bottom: 1px solid gold;
+} */

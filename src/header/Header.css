@@ -1,0 +1,25 @@
+.header_contaienr {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  position: static;
+  top: 0;
+  align-items: center;
+  height: 36px;
+}
+.header_site_name {
+  margin-left: 10px;
+}
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.userInfo > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.activate {
+  font-weight: bold;
+  border-bottom: 1px solid gold;
+}

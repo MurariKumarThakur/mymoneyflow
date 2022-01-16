@@ -1,0 +1,90 @@
+.meterialTable {
+}
+
+.transaction_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(93, 93, 252);
+  height: 30px;
+  color: white;
+}
+.transaction_content {
+  display: flex;
+
+  /* width: 300px; */
+  margin: 10px;
+}
+.tran_history {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+
+  width: 30%;
+}
+.tran_history > div {
+  margin: 10px;
+}
+.history_button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tran_history Button {
+  margin-top: 20px;
+}
+.tran_history input {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  font-size: 15px;
+}
+.transaction_content {
+  display: flex;
+}
+.tranHistory {
+  border-radius: 1px solid;
+  width: 100%;
+}
+.header_history {
+  background-color: black;
+  height: 20px;
+  color: white;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+}
+.current_amount {
+  color: green;
+}
+.overallInformati {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+}
+.totalInvestedMoney {
+  background-color: bisque;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 6px;
+}
+/* .MuiTableBody-root {
+  height: 500px;
+  overflow: auto !important;
+}
+.MuiTableRow-root {
+  height: 20px !important;
+} */
+.meterialTable {
+  height: 65vh;
+  font-size: 12px;
+  overflow: auto;
+}
