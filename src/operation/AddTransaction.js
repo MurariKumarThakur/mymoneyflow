@@ -13,7 +13,7 @@ const AddTransaction = (props) => {
     db.collection("history")
       .doc(id + "_" + new Date().getTime())
       .set({
-        amount:buttonText=="+ You Gave"? Number(amount):-Number(amount),
+        amount:Number(amount),
         date: new Date(date).getTime(),
         comment: comment,
       })

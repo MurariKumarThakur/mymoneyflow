@@ -81,17 +81,17 @@ const Interest = (props) => {
   const getInterest = (amount, rate, date, id) => {
     let transactionHistory = getHistoryDataBasedOnId(id);
     //  console.log(amount +" "+rate+" "+date);
-    const month = getMonthDiffWithCurrent(date);
-    const interest = (amount * rate * month) / 100;
-    const totalMoney = amount + interest - transactionHistory;
-    console.table(
-      "ActualAmount =" +
-        amount +
-        " interest = " +
-        interest +
-        " transaction History = " +
-        transactionHistory
-    );
+    //const month = getMonthDiffWithCurrent(date);
+    //const interest = (amount * rate * month) / 100;
+    const totalMoney = amount;
+    // console.table(
+    //   "ActualAmount =" +
+    //     amount +
+    //     " interest = " +
+    //     interest +
+    //     " transaction History = " +
+    //     transactionHistory
+    // );
     return totalMoney;
   };
 
@@ -102,6 +102,13 @@ const Interest = (props) => {
 
     return interest;
   };
+
+  const calculatePayableAmount =(amount,rate,date,id)=>{
+    let transactionHistory = getHistoryDataBasedOnId(id);
+    let interest =getOnlyInterest(amount,rate,date);
+    let finalpayableAmount = interest.toFixed(0) -transactionHistory;
+      return finalpayableAmount;
+  }
   const getTotalEarnedInterest = () => {
     let sum = 0;
 
@@ -189,17 +196,12 @@ const Interest = (props) => {
     },
 
     {
-      title: "Total Money",
+      title: "Principle(muldhan)",
       sorting: false,
       field: "amount",
       render: (row) => (
         <div className='current_amount'>
-          {getInterest(
-            row.amount,
-            row.rate,
-            row.date,
-            customer[row.tableData.id].id
-          ).toFixed(0)}
+          {row.amount}
         </div>
       ),
     },
@@ -210,6 +212,16 @@ const Interest = (props) => {
       render: (row) => (
         <div className='current_amount'>
           {getOnlyInterest(row.amount, row.rate, row.date).toFixed(0)}
+        </div>
+      ),
+    },
+    {
+      title: "Total payable Amount",
+      sorting: false,
+      field: "amount",
+      render: (row) => (
+        <div className='current_amount'>
+        {calculatePayableAmount(row.amount,row.rate,row.date,customer[row.tableData.id].id)}
         </div>
       ),
     },

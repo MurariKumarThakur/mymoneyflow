@@ -39,10 +39,10 @@ const ViewTransaction = (props) => {
 
     return amount;
   };
-  const youGave = (e) => {
-    setOpenAddTransaction(true);
-    setButtonText(e.target.innerText);
-  };
+  // const youGave = (e) => {
+  //   setOpenAddTransaction(true);
+  //   setButtonText(e.target.innerText);
+  // };
   const youGot = (e) => {
     setOpenAddTransaction(true);
     setButtonText(e.target.innerText);
@@ -109,19 +109,19 @@ const ViewTransaction = (props) => {
           </span>
         </div>
         <div className='createTransaction'>
-          <button
+          {/* <button
             style={{ background: "red", color: "white" }}
             onClick={(e) => youGave(e)}
           >
             {" "}
             + You Gave
-          </button>
+          </button> */}
           <button
             style={{ background: "green", color: "white" }}
             onClick={(e) => youGot(e)}
           >
             {" "}
-            - You Got
+            You Got
           </button>
         </div>
 
