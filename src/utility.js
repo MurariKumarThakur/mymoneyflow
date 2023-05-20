@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+
 const getFormatedDate = (date) => {
     let time;
     time = new Date(date).toDateString();

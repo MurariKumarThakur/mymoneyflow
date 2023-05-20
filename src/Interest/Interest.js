@@ -107,7 +107,7 @@ const Interest = (props) => {
     let transactionHistory = getHistoryDataBasedOnId(id);
     let interest =getOnlyInterest(amount,rate,date);
     let finalpayableAmount = interest.toFixed(0) -transactionHistory;
-      return finalpayableAmount;
+      return finalpayableAmount+amount;
   }
   const getTotalEarnedInterest = () => {
     let sum = 0;
